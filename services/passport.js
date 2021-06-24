@@ -19,7 +19,8 @@ passport.deserializeUser((id,done)=>{
 passport.use(new GoogleStrategy({
     clientID: keys.googleClientID,
     clientSecret: keys.googleClientSecret,
-    callbackURL:"/auth/google/callback"
+    callbackURL:"/auth/google/callback",
+    proxy:true,
 },(accessToken,refreshToken,profile,done)=>{
     User.findOne({googleId:profile.id}).then((results)=>{
         if(results) {
@@ -40,7 +41,7 @@ passport.use(new GoogleStrategy({
 passport.use(new SpotifyStrategy({
     clientID: keys.spotifyClientID,
     clientSecret: keys.spotifyClientSecret,
-    callbackURL:"/auth/spotify/callback"
+    callbackURL:"/auth/spotify/callback",
 },(accessToken,refreshToken,expire,profile,done)=>{
     console.log(profile);
     User.findOne({spotifyId:profile.id}).then((results)=>{
