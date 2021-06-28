@@ -11,7 +11,7 @@ const Payments = () => {
         amount={5*100}
         currency="INR"
         token={token=>dispatch(handleToken(token))}
-        stripeKey={process.env.REACT_APP_STRIPE_KEY}
+        stripeKey="pk_test_51IEYd8KOecIy1LyGh4HL31MLl2Bj6I2DZP4cl5dONXGje65sSJbZeO0cyOIMT1stnUSWH6R1y7YxpoV1Urfpw1dn00SEmu6tgN"
         >
             <button className='btn'>Add Credits</button>
         </StripeCheckout>
