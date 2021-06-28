@@ -12,8 +12,8 @@ const app=express();
 app.use(cookieSession({
     maxAge:30 * 24 * 60 * 60 *1000,
     keys: [keys.cookieKey],
-    sameSite: process.env.NODE_ENV === "production" ? 'none' : 'lax', // must be 'none' to enable cross-site delivery
-    secure: process.env.NODE_ENV === "production", // must be true if sameSite='none'
+    // sameSite: process.env.NODE_ENV === "production" ? 'none' : 'lax', // must be 'none' to enable cross-site delivery
+    // secure: process.env.NODE_ENV === "production", // must be true if sameSite='none'
 }))
 
 app.use(express.json());
