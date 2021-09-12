@@ -18,6 +18,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@sendgrid/helpers": "^7.4.6",
     "@sendgrid/mail": "^7.4.6",
     "concurrently": "^6.2.0",
     "cookie-session": "^1.4.0",
