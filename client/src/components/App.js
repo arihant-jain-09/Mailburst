@@ -3,7 +3,7 @@ import {BrowserRouter,Switch,Route} from 'react-router-dom';
 import {useDispatch} from 'react-redux'
 import Header from './Header/Header'
 import Landing from './Landing/Landing';
-import SurveyNew from './SurveyNew/SurveyNew';
+import SurveyNew from './surveys/SurveyNew/SurveyNew.jsx';
 import Dashboard from './Dashboard/Dashboard';
 import { fetchUser } from '../redux/auth/auth.action';
 import { useEffect } from 'react';

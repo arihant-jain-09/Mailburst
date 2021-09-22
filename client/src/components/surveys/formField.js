@@ -1,0 +1,6 @@
+const FIELDS=[{name:"title",label:"Survey Title"},
+{name:"subject",label:"Subject Line"},
+{name:"body",label:"Email body"},
+{name:"recipients",label:"Recipient List"}]
+
+export default FIELDS;

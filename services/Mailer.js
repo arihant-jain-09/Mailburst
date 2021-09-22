@@ -16,7 +16,7 @@ class Mailer{
 
     this.emails={
       to:this.recipients,
-      from:'2019213@iiitdmj.ac.in',
+      from:'noreplymailburst@gmail.com',
       subject:subject,
       html:content,
       tracking_settings:{
