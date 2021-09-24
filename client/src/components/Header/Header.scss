@@ -1,0 +1,28 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #282828;
+  padding: 0 2rem;
+  &__logoBox {
+    display: flex;
+    align-items: center;
+    font-family: 'Acumin Pro Black';
+    &:link,
+    &:visited {
+      color: #fff;
+    }
+  }
+  &__options {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    & > *:nth-child(2) {
+      margin: 0 2rem;
+    }
+    & > * {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

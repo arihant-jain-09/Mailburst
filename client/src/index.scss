@@ -11,3 +11,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: 'Acumin Pro Black';
+  src: local('Acumin Pro Black'), url(./fonts/AcuminProBlack.otf) format('otf');
+}

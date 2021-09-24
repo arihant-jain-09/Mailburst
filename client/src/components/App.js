@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import {BrowserRouter,Switch,Route} from 'react-router-dom';
 import {useDispatch} from 'react-redux'
 import Header from './Header/Header'
@@ -18,7 +18,7 @@ const App=()=> {
     }
   }, [dispatch])
   return (
-    <div className='container'>
+    <div className='app'>
       <BrowserRouter>
          <Header/>
          <Switch>
